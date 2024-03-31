@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-netlify'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
@@ -33,8 +33,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter(
-			{
+		adapter: adapter({
 			// if true, will create a Netlify Edge Function rather
 			// than using standard Node-based functions
 			edge: false,
@@ -43,8 +42,7 @@ const config = {
 			// instead of creating a single one for the entire app.
 			// if `edge` is true, this option cannot be used
 			split: false
-			}
-		)
+		})
 	}
 }
 
