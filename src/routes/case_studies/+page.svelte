@@ -12,10 +12,6 @@
 <section>
 	<ul class="posts">
 		{#each data.case_studies as case_study}
-			<!-- console.log case study -->
-			{console.log(case_study)}
-			{console.log(case_study.slug)}
-
 			<li class="post">
 				<a href={case_study.slug} class="title">{case_study.title}</a>
 				<p class="date">{formatDate(case_study.date)}</p>
