@@ -8,3 +8,12 @@ export type Post = {
 	categories: Categories[]
 	published: boolean
 }
+
+export type CaseStudy = {
+	title: string
+	slug: string
+	description: string
+	date: string
+	categories: Categories[]
+	published: boolean
+}
