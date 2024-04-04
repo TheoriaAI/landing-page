@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.pcss'
 	import Footer from './footer.svelte'
 	import Header from './header.svelte'
 	import PageTransition from './transition.svelte'

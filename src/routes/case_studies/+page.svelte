@@ -4,51 +4,108 @@
 
 	export let data
 
-	import { Card, Button, Toggle } from 'flowbite-svelte';
-	let hCard = false;
-	import { ArrowRightOutline } from 'flowbite-svelte-icons';
-	let vCard = false;
+	// import { Card, Button, Toggle } from 'flowbite-svelte';
+	// let hCard = false;
+	// import { ArrowRightOutline } from 'flowbite-svelte-icons';
+	// let vCard = false;
+
+
+	import { Card, Button } from 'flowbite-svelte';
+	import { CheckCircleSolid } from 'flowbite-svelte-icons';
+
+		
+	let elemCarousel: HTMLDivElement;
+	const unsplashIds = ['vjUokUWbFOs', '1aJuPtQJX_I', 'Jp6O3FFRdEI', 'I3C_eojFVQY', 's0fXOuyTH1M', 'z_X0PxmBuIQ'];
+						
+	function carouselLeft(): void {
+		const x =
+			elemCarousel.scrollLeft === 0
+				? elemCarousel.clientWidth * elemCarousel.childElementCount // loop
+				: elemCarousel.scrollLeft - elemCarousel.clientWidth; // step left
+		elemCarousel.scroll(x, 0);
+	}
+						
+
+	function carouselRight(): void {
+		const x =
+			elemCarousel.scrollLeft === elemCarousel.scrollWidth - elemCarousel.clientWidth
+				? 0 // loop
+				: elemCarousel.scrollLeft + elemCarousel.clientWidth; // step right
+		elemCarousel.scroll(x, 0);
+	}
+						
+
+				
 </script>
 
 <svelte:head>
 	<title>{config.title}</title>
 </svelte:head>
 
+<!-- GOOD CITATION -->
+<!-- <section>
+	<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+		<figure class="max-w-screen-md mx-auto">
+			<svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+			</svg> 
+			<blockquote>
+				<p class="text-2xl font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+			</blockquote>
+			<figcaption class="flex items-center justify-center mt-6 space-x-3">
+				<img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+				<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+					<div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+					<div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+				</div>
+			</figcaption>
+		</figure>
+	</div>
+  </section> -->
 
 
-
-<section>
-	<!-- <div class="space-y-4">
-		<Card img="/favicon.png" href="/" horizontal size="md" reverse={hCard}>
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-		</Card>
-		<Toggle bind:checked={hCard} class="italic dark:text-gray-500">Reverse</Toggle>
-	</div> -->
-	<div  class="space-y-4">
-		<Card img="/favicon.png" reverse={vCard}>
-		  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-		  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-		  <Button>
-			Read more <ArrowRightOutline class="w-3.5 h-3.5 ms-2 text-white" />
-		  </Button>
-		</Card>
-		<Toggle bind:checked={vCard} class="italic dark:text-gray-500">Reverse</Toggle>
-	  </div>
-
-<!-- 
-	<ul class="posts">
-		{#each data.case_studies as case_study}
-			<li class="post">
-				<a href={case_study.slug} class="title">{case_study.title}</a>
-				<p class="date">{formatDate(case_study.date)}</p>
-				<p class="description">{case_study.description}</p>
-			</li>
+  <div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+	<!-- Button: Left -->
+	<button type="button" class="btn-icon variant-filled" on:click={carouselLeft}>
+		<i class="fa-solid fa-arrow-left" />
+	</button>
+	<!-- Full Images -->
+	<div bind:this={elemCarousel} class="snap-x snap-mandatory scroll-smooth flex overflow-x-auto">
+		{#each unsplashIds as unsplashId}
+			<img
+				class="snap-center w-[1024px] rounded-container-token"
+				src="https://source.unsplash.com/{unsplashId}/1024x768"
+				alt={unsplashId}
+				loading="lazy"
+			/>
 		{/each}
-	</ul> -->
-</section>
+	</div>
+	<!-- Button: Right -->
+	<button type="button" class="btn-icon variant-filled" on:click={carouselRight}>
+		<i class="fa-solid fa-arrow-right" />
+	</button>
+</div>
+
+
+
 <!-- 
-<style>
+<section>
+<ul class="posts">
+	{#each data.case_studies as case_study}
+		<li class="post">
+			<div  class="space-y-4">
+				<Card img="/parallax/p0.png" href={case_study.slug} reverse={vCard}>
+				  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{case_study.title}</h5>
+				  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">{formatDate(case_study.date)}</p>
+				  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">{case_study.description}</p>
+				</Card>
+			  </div>
+		</li>
+	{/each}
+</ul>
+</section> -->
+
+<style lang="postcss">
 	.posts {
 		display: grid;
 		gap: var(--size-7);
@@ -75,4 +132,4 @@
 	.description {
 		margin-top: var(--size-3);
 	}
-</style> -->
+</style>
