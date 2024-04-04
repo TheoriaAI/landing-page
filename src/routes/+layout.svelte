@@ -6,13 +6,13 @@
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
-	import '../app.css'
+	import '../app.pcss'
 
 	export let data
 </script>
 
 <div class="layout">
-	<Header />
+	<Header></Header>
 
 	<main>
 		<PageTransition url={data.url}>
@@ -20,7 +20,7 @@
 		</PageTransition>
 	</main>
 
-	<Footer />
+	<Footer></Footer>
 </div>
 
 <style>
