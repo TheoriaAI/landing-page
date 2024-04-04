@@ -4,14 +4,9 @@
 
 	export let data
 
-	// import { Card, Button, Toggle } from 'flowbite-svelte';
-	// let hCard = false;
-	// import { ArrowRightOutline } from 'flowbite-svelte-icons';
-	// let vCard = false;
-
-
-	import { Card, Button } from 'flowbite-svelte';
-	import { CheckCircleSolid } from 'flowbite-svelte-icons';
+	import { Card, Button, Toggle } from 'flowbite-svelte';
+	import { ArrowRightOutline, CheckCircleSolid } from 'flowbite-svelte-icons';
+	let vCard = false;
 
 		
 	let elemCarousel: HTMLDivElement;
@@ -43,7 +38,7 @@
 </svelte:head>
 
 <!-- GOOD CITATION -->
-<!-- <section>
+<section>
 	<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
 		<figure class="max-w-screen-md mx-auto">
 			<svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +56,7 @@
 			</figcaption>
 		</figure>
 	</div>
-  </section> -->
+  </section>
 
 
   <div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
@@ -88,22 +83,26 @@
 
 
 
-<!-- 
+
+
+
+
 <section>
 <ul class="posts">
 	{#each data.case_studies as case_study}
-		<li class="post">
-			<div  class="space-y-4">
-				<Card img="/parallax/p0.png" href={case_study.slug} reverse={vCard}>
-				  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{case_study.title}</h5>
-				  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">{formatDate(case_study.date)}</p>
-				  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">{case_study.description}</p>
-				</Card>
-			  </div>
+		<li>
+			<a href={case_study.slug} class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/favicon.png" alt="">
+				<div class="flex flex-col justify-between p-4 leading-normal">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{case_study.title}</h5>
+					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{formatDate(case_study.date)}</p>
+					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{case_study.description}</p>
+				</div>
+			</a>
 		</li>
 	{/each}
 </ul>
-</section> -->
+</section>
 
 <style lang="postcss">
 	.posts {
