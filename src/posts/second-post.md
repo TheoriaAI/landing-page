@@ -1,6 +1,6 @@
 ---
-title: Second
-description: Second post.
+title: DNS PLS WORK
+description: DNS PLS WORK
 date: '2023-4-16'
 categories:
   - sveltekit
@@ -12,7 +12,7 @@ published: true
   import Counter from './counter.svelte'
 </script>
 
-## Svelte
+## DNS PLS WORK
 
 Media inside the **static** folder is served from `/`.
 
