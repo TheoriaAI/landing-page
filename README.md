@@ -1,4 +1,4 @@
-# SvelteKit Markdown Blog
+# Theoria AI
 
 Learn how to build a blazingly fast and extendable SvelteKit Markdown blog for poets.
 
