@@ -1,5 +1,6 @@
 <script>
 	import { Parallax, ParallaxLayer } from 'svelte-parallax'
+	import Banner from './Banner.svelte'
 
 	let parallax
 	//let disabled = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -67,7 +68,7 @@
 		rate="0.1"
 		style="display: flex; align-items: center; justify-content: center;"
 	>
-		<img
+		<!-- <img
 			src={url('server')}
 			alt=""
 			class="server"
@@ -75,7 +76,17 @@
 			on:click={() => parallax.scrollTo(2, { selector: '.bash' })}
 			on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(2, { selector: '.bash' })}
 			tabindex="0"
-		/>
+		/> -->
+
+
+		<div class="server"
+			style="width: 90%;"
+			on:click={() => parallax.scrollTo(2, { selector: '.bash' })}
+			on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(2, { selector: '.bash' })}
+			tabindex="0">
+			<Banner></Banner>
+		</div>
+		  
 	</ParallaxLayer>
 
 	<ParallaxLayer

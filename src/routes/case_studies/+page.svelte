@@ -3,11 +3,6 @@
 	import * as config from '$lib/config'
 
 	export let data
-
-	import { Card, Button, Toggle } from 'flowbite-svelte';
-	import { ArrowRightOutline, CheckCircleSolid } from 'flowbite-svelte-icons';
-	let vCard = false;
-
 		
 	let elemCarousel: HTMLDivElement;
 	const unsplashIds = ['vjUokUWbFOs', '1aJuPtQJX_I', 'Jp6O3FFRdEI', 'I3C_eojFVQY', 's0fXOuyTH1M', 'z_X0PxmBuIQ'];

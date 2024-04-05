@@ -5,9 +5,7 @@
 <footer>
 	<p>{config.title} &copy {new Date().getFullYear()}</p>
 	<blockquote>
-		"You miss 100% of the shots you don’t take". - Wayne Gretzky
-		<span>Michael Scott</span>
-	</blockquote>
+		Tailored AI Solution for your Business
 </footer>
 
 <style>
@@ -18,6 +16,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		width: 95%;
 	}
 	footer blockquote {
 		border: none;

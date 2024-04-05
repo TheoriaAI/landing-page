@@ -3,12 +3,12 @@
 	import * as config from '$lib/config'
 </script>
 
-<nav>
-	<a href="/" class="title">
-		<b>{config.title}</b>
+<!-- make the background color slightly transparent
+ -->
+<nav class="flex bg-gray-800 text-white top-0 py-3 flex-wrap justify-around bg-silver rounded-b-lg shadow-lg">
+	<a href="/" class="text-lg font-semibold">{config.title}
 	</a>
-
-	<ul class="links">
+	<ul class="flex gap-[40px] text-m">
 		<li>
 			<a href="/blog">Blog</a>
 		</li>
@@ -16,22 +16,20 @@
 			<a href="/case_studies">Case Studies</a>
 		</li>
 	</ul>
-
 	<Toggle />
-</nav>
+  </nav>
 
 <style>
 	nav {
-		padding-block: var(--size-7);
-	}
-
-	.links {
-		margin-block: var(--size-7);
-	}
+		background-color: var(--surface-2);
+		padding: var(--size-3);
+		width: 95%;
+	} 
 
 	a {
 		color: inherit;
 		text-decoration: none;
+		color: var(--text-2);
 	}
 
 	@media (min-width: 768px) {
