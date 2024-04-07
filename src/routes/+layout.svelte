@@ -20,7 +20,6 @@
 			<slot />
 		</PageTransition>
 	</main>
-
 	<Footer></Footer>
 </div>
 

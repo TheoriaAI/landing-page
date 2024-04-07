@@ -1,126 +1,14 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils'
-	import * as config from '$lib/config'
-
 	export let data
-		
-	let elemCarousel: HTMLDivElement;
-	const unsplashIds = ['vjUokUWbFOs', '1aJuPtQJX_I', 'Jp6O3FFRdEI', 'I3C_eojFVQY', 's0fXOuyTH1M', 'z_X0PxmBuIQ'];
-						
-	function carouselLeft(): void {
-		const x =
-			elemCarousel.scrollLeft === 0
-				? elemCarousel.clientWidth * elemCarousel.childElementCount // loop
-				: elemCarousel.scrollLeft - elemCarousel.clientWidth; // step left
-		elemCarousel.scroll(x, 0);
-	}
-						
-
-	function carouselRight(): void {
-		const x =
-			elemCarousel.scrollLeft === elemCarousel.scrollWidth - elemCarousel.clientWidth
-				? 0 // loop
-				: elemCarousel.scrollLeft + elemCarousel.clientWidth; // step right
-		elemCarousel.scroll(x, 0);
-	}
-						
-
-	import {theme} from '$lib/theme';
-
-				
+	import { formatDate } from '$lib/utils'
 </script>
-
+<!-- 
 <svelte:head>
 	<title>{config.title}</title>
-</svelte:head>
+</svelte:head> 
+-->
 
-<!-- GOOD CITATION -->
-<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-	<figure class="max-w-screen-md mx-auto">
-		<svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-		</svg> 
-		<blockquote>
-			<p class="text-2xl font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
-		</blockquote>
-		<figcaption class="flex items-center justify-center mt-6 space-x-3">
-			<img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
-			<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-				<div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
-				<div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
-			</div>
-		</figcaption>
-	</figure>
-</div>
-
-<div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
-	<!-- Button: Left -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselLeft}>
-		<i class="fa-solid fa-arrow-left" />
-	</button>
-	<!-- Full Images -->
-	<div bind:this={elemCarousel} class="snap-x snap-mandatory scroll-smooth flex overflow-x-auto">
-		{#each unsplashIds as unsplashId}
-			<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-				<figure class="max-w-screen-md mx-auto">
-					<svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-					</svg> 
-					<blockquote>
-						<p class="text-2xl font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
-					</blockquote>
-					<figcaption class="flex items-center justify-center mt-6 space-x-3">
-						<img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
-						<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-							<div class="pr-3 font-medium text-gray-900 dark:text-white"> {unsplashId}</div>
-							<div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at {unsplashId}</div>
-						</div>
-					</figcaption>
-				</figure>
-			</div>
-
-		
-		{/each}
-	</div>
-	<!-- Button: Right -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselRight}>
-		<i class="fa-solid fa-arrow-right" />
-	</button>
-</div>
-
-
-
-
-  <div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
-	<!-- Button: Left -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselLeft}>
-		<i class="fa-solid fa-arrow-left" />
-	</button>
-	<!-- Full Images -->
-	<div bind:this={elemCarousel} class="snap-x snap-mandatory scroll-smooth flex overflow-x-auto">
-		{#each unsplashIds as unsplashId}
-			<img
-				class="snap-center w-[1024px] rounded-container-token"
-				src="https://source.unsplash.com/{unsplashId}/1024x768"
-				alt={unsplashId}
-				loading="lazy"
-			/>
-		{/each}
-	</div>
-	<!-- Button: Right -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselRight}>
-		<i class="fa-solid fa-arrow-right" />
-	</button>
-</div>
-
-
-
-
-
-
-
-<section>
-<ul class="posts">
+<!-- <ul class="flex flex-wrap justify-center mt-10">
 	{#each data.case_studies as case_study}
 		<li>
 			<a href={case_study.slug} class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -133,7 +21,49 @@
 			</a>
 		</li>
 	{/each}
-</ul>
+</ul> -->
+
+
+<section>
+<div class="flex flex-wrap justify-center mt-10">
+	{#each data.case_studies as case_study}
+	<a href={case_study.slug}>
+	
+	<div class="p-4 max-w-sm">
+		<div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+			<div class="flex items-center mb-3">
+				<div
+					class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+					<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+						<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+					</svg>
+				</div>
+				<h2 class="text-white dark:text-white text-lg font-medium">{case_study.title}</h2>
+			</div>
+			<div class="flex flex-col justify-between flex-grow">
+				<p class="leading-relaxed text-base text-white dark:text-gray-300">
+					{case_study.description}
+				</p>
+				<p class="leading-relaxed text-base text-white dark:text-gray-300">
+					{formatDate(case_study.date)}
+				</p>
+				<!-- <a href={case_study.slug} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">{formatDate(case_study.date)}
+					<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+						<path d="M5 12h14M12 5l7 7-7 7"></path>
+					</svg>
+				</a> -->
+			</div>
+		</div>
+	</div>
+	
+	
+	</a>
+
+	{/each}
+</div>
+
 </section>
 
 <style lang="postcss">
@@ -144,15 +74,6 @@
 	a {
 		color: inherit;
 		text-decoration: none;
-	}
-
-	.posts {
-		display: grid;
-		gap: var(--size-7);
-	}
-
-	.post {
-		max-inline-size: var(--size-content-3);
 	}
 
 	.post:not(:last-child) {

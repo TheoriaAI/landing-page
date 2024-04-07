@@ -1,35 +1,29 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	let footer;
 </script>
 
-<footer>
+<nav class="flex bg-gray-800 text-white top-0 py-3 flex-wrap justify-around bg-silver rounded-t-lg shadow-lg">
 	<p>{config.title} &copy {new Date().getFullYear()}</p>
-	<blockquote>
-		Tailored AI Solution for your Business
-</footer>
+	<p class="quote">
+		Tailored AI solutions for your business
+	</p>
+</nav>
 
 <style>
-	footer {
-		padding-block: var(--size-7);
-		border-top: 1px solid var(--border);
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
+	nav {
+		background-color: var(--surface-2);
+		padding: var(--size-3);
 		width: 95%;
 		margin-inline: auto;
+	} 
+	p{
+		padding: var(--size-2);
 	}
-	footer blockquote {
-		border: none;
-		font-size: var(--size-4);
-		max-inline-size: var(--size-content-3);
-	}
-	footer blockquote span {
-		font-size: var(--size-3);
-		border: none;
-	}
-
-	p {
+	.quote {
+		color: inherit;
+		text-decoration: none;
 		color: var(--text-2);
+		padding: var(--size-2);
 	}
 </style>
