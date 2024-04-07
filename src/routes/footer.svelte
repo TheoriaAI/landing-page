@@ -18,12 +18,13 @@
 		margin-inline: auto;
 	}
 	p {
+		color: var(--text-1);
+		text-decoration: none;
 		padding: var(--size-2);
 	}
 	.quote {
-		color: inherit;
-		text-decoration: none;
 		color: var(--text-2);
+		text-decoration: none;
 		padding: var(--size-2);
 	}
 </style>
