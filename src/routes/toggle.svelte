@@ -31,5 +31,6 @@
 	button > * {
 		display: flex;
 		gap: var(--size-2);
+		color: var(--text-2);
 	}
 </style>
