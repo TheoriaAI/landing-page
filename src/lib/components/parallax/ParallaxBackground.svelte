@@ -98,7 +98,7 @@
 			src="https://calendly.com/rufimelo99/30min"
 			title="Calendly"
 			class="bash"
-			style="width: 40%; height: 70%;"
+			style="height: 80%;"
 			on:click={() => parallax.scrollTo(1, { selector: '.server' })}
 			on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(1, { selector: '.server' })}
 			tabindex="0"

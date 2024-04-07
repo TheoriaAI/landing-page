@@ -17,6 +17,7 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 95%;
+		margin-inline: auto;
 	}
 	footer blockquote {
 		border: none;

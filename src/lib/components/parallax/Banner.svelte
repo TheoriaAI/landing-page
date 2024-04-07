@@ -22,7 +22,7 @@
     <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">AI Solutions</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-            Introducing Theoria AI: Your go-to destination for cutting-edge AI consulting solutions. From predictive analytics to machine learning, we're here to revolutionize your business with bespoke AI solutions. Unlock innovation, efficiency, and growth with Theoria AI.</p>
+        Welcome to Theoria AI, where we specialize in AI consulting solutions to drive innovation and efficiency. Let us transform your business with cutting-edge AI technologies. </p>
     </div>
     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -31,24 +31,12 @@
         <a href="#">Contacts <span aria-hidden="true">&rarr;</span></a>
         <a href="#">Team <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Offices worldwide</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
-        </div>
-        <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Full-time colleagues</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
-        </div>
-        <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Hours per week</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
-        </div>
-        <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Paid time off</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Unlimited</dd>
-        </div>
-        </dl>
+        <!-- <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Something cool</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
+            </div>
+        </dl> -->
     </div>
     </div>
 </div>

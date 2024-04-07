@@ -24,6 +24,7 @@
 		background-color: var(--surface-2);
 		padding: var(--size-3);
 		width: 95%;
+		margin-inline: auto;
 	} 
 
 	a {

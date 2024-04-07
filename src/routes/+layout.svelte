@@ -37,6 +37,7 @@
 	}
 
 	main {
+		margin-inline: auto;
 		padding-block: var(--size-9);
 		width: 95%;
 	}
