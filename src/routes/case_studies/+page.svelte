@@ -69,6 +69,7 @@
 <style lang="postcss">
 	.card {
 		background-color: var(--surface-1);
+		border: 2px solid var(--border);
 	}
 	.card:hover {
 		background-color: var(--surface-3);
