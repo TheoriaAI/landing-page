@@ -78,15 +78,15 @@
 			tabindex="0"
 		/> -->
 
-
-		<div class="server"
+		<div
+			class="server"
 			style="width: 90%;"
 			on:click={() => parallax.scrollTo(2, { selector: '.bash' })}
 			on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(2, { selector: '.bash' })}
-			tabindex="0">
+			tabindex="0"
+		>
 			<Banner></Banner>
 		</div>
-		  
 	</ParallaxLayer>
 
 	<ParallaxLayer

@@ -24,7 +24,6 @@
 </div>
 
 <style>
-	
 	.layout {
 		height: 100%;
 		/* max-inline-size: 1440px; */

@@ -5,10 +5,11 @@
 
 <!-- make the background color slightly transparent
  -->
-<nav class="flex bg-gray-800 text-white top-0 py-3 flex-wrap justify-around bg-silver rounded-b-lg shadow-lg">
-	<a href="/" class="text-lg font-semibold">{config.title}
-	</a>
-	<ul class="flex gap-[40px] text-m">
+<nav
+	class="bg-silver top-0 flex flex-wrap justify-around rounded-b-lg bg-gray-800 py-3 text-white shadow-lg"
+>
+	<a href="/" class="text-lg font-semibold">{config.title} </a>
+	<ul class="text-m flex gap-[40px]">
 		<li>
 			<a href="/blog">Blog</a>
 		</li>
@@ -17,7 +18,7 @@
 		</li>
 	</ul>
 	<Toggle />
-  </nav>
+</nav>
 
 <style>
 	nav {
@@ -25,7 +26,7 @@
 		padding: var(--size-3);
 		width: 95%;
 		margin-inline: auto;
-	} 
+	}
 
 	a {
 		color: inherit;
