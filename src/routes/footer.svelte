@@ -14,7 +14,7 @@
 	nav {
 		background-color: var(--surface-2);
 		padding: var(--size-3);
-		width: 95%;
+		width: 100%;
 		margin-inline: auto;
 	}
 	p {
