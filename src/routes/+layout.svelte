@@ -23,6 +23,7 @@
 	<Footer></Footer>
 </div>
 
+
 <style>
 	.layout {
 		height: 100%;
@@ -40,6 +41,7 @@
 		margin-inline: auto;
 		padding-block: var(--size-9);
 		width: 95%;
+		background-color: var(--surface-3);
 	}
 
 	@media (min-width: 436px) {
@@ -47,4 +49,5 @@
 			padding-inline: 0;
 		}
 	}
+	
 </style>

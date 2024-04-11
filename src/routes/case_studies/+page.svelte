@@ -25,54 +25,63 @@
 </ul> -->
 
 <section>
-	<div class="mt-10 flex flex-wrap justify-center">
-		{#each data.case_studies as case_study}
+	<div class="mt-10 grid grid-cols-3 gap-4">
+		{#each data.case_studies as case_study (case_study.slug)}
 			<a href={case_study.slug}>
-				<div class="max-w-sm p-4">
-					<div class="card flex h-full flex-col rounded-lg p-8">
-						<div class="mb-3 flex items-center">
-							<div
-								class="mr-3 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white dark:bg-indigo-500"
-							>
-								<svg
-									fill="none"
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									class="h-5 w-5"
-									viewBox="0 0 24 24"
+				<a href={case_study.slug}>
+					<div class="max-w-sm p-4">
+						<div class="card flex h-full flex-col rounded-lg p-8">
+							<div class="mb-3 flex items-center">
+								<div
+									class="mr-3 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white dark:bg-indigo-500"
 								>
-									<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-								</svg>
+									<svg
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="h-5 w-5"
+										viewBox="0 0 24 24"
+									>
+										<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+									</svg>
+								</div>
+								<h2 class="text-lg font-medium text-white dark:text-white">{case_study.title}</h2>
 							</div>
-							<h2 class="text-lg font-medium text-white dark:text-white">{case_study.title}</h2>
-						</div>
-						<div class="flex flex-grow flex-col justify-between">
-							<p class="text-base leading-relaxed text-white dark:text-gray-300">
-								{case_study.description}
-							</p>
-							<p class="text-base leading-relaxed text-white dark:text-gray-300">
-								{formatDate(case_study.date)}
-							</p>
-							<!-- <a href={case_study.slug} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">{formatDate(case_study.date)}
-						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-							stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						</svg>
-					</a> -->
+							<div class="flex flex-grow flex-col justify-between">
+								<p class="text-base leading-relaxed text-white dark:text-gray-300">
+									{case_study.description}
+								</p>
+								<p class="text-base leading-relaxed text-white dark:text-gray-300">
+									{formatDate(case_study.date)}
+								</p>
+								<!-- <a href={case_study.slug} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">{formatDate(case_study.date)}
+							<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+								stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+								<path d="M5 12h14M12 5l7 7-7 7"></path>
+							</svg>
+						</a> -->
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
 			</a>
 		{/each}
 	</div>
 </section>
 
 <style lang="postcss">
+	.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 	.card {
 		background-color: var(--surface-1);
 		border: 2px solid var(--border);
+		min-width: 200px; 
+        min-height: 300px; 
 	}
 	.card:hover {
 		background-color: var(--surface-3);
