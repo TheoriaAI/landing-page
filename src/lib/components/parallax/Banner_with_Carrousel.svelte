@@ -1,13 +1,8 @@
 <script>
 	let banner
+	import CarrouselIndustries from './Carrousel_Industries.svelte'
 </script>
 
-<!-- <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 server"
-    style="width: 90%;"
-    on:click={() => parallax.scrollTo(2, { selector: '.bash' })}
-    on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(2, { selector: '.bash' })}
-    tabindex="0"> -->
-<!-- extra large shadow -->
 <div
 	class="relative isolate overflow-hidden rounded-2xl bg-gray-900 py-24 shadow-2xl sm:py-32"
 	bind:this={banner}
@@ -34,14 +29,13 @@
 	</div>
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl lg:mx-0">
-			<h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-				Commodities Intelligence
-			</h2>
+			<!-- <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Commodities Intelligence</h2>
 			<p class="mt-6 text-lg leading-8 text-gray-300">
-				Welcome to Theoria AI, where we specialize in commodities intelligence. We provide
-				data-driven insights to help you make better decisions by leveraging the power of AI and
-				machine learning.
-			</p>
+				Welcome to Theoria AI, where we specialize in commodities intelligence. We provide data-driven insights to help you make better decisions by leveraging the power of AI and machine learning.
+			</p> -->
+		</div>
+		<div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+			<CarrouselIndustries />
 		</div>
 		<div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
 			<div

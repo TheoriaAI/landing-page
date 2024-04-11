@@ -1,6 +1,7 @@
 <script>
 	import { Parallax, ParallaxLayer } from 'svelte-parallax'
 	import Banner from './Banner.svelte'
+	import CarrouselIndustries from './Banner_with_Carrousel.svelte'
 
 	let parallax
 	//let disabled = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -86,6 +87,7 @@
 			tabindex="0"
 		>
 			<Banner></Banner>
+			<!-- <CarrouselIndustries></CarrouselIndustries> -->
 		</div>
 	</ParallaxLayer>
 
