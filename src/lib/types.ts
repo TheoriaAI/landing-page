@@ -7,6 +7,9 @@ export type Post = {
 	date: string
 	categories: Categories[]
 	published: boolean
+	author: string
+	author_image: string
+	image: string
 }
 
 export type CaseStudy = {
@@ -16,4 +19,7 @@ export type CaseStudy = {
 	date: string
 	categories: Categories[]
 	published: boolean
+	author: string
+	author_image: string
+	image: string
 }

@@ -6,6 +6,9 @@ categories:
   - sveltekit
   - svelte
 published: true
+author: Rui
+author_image: authors/Melo.png
+image: carrousel-images/robot-sketch.webp
 ---
 
 ## Markdown
