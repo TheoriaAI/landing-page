@@ -113,12 +113,24 @@
         background-color: var(--surface-1); /* Change color on hover */
     }
 
+    .nav-links {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+    }
+
     @media (min-width: 768px) {
         .hamburger {
             display: none;
         }
+        
+        .navbar {
+            justify-content: space-between; /* Distribute space evenly between items */
+        }
 
         .nav-links {
+            flex-grow: 1; /* Allow nav-links to take up remaining space */
+            justify-content: space-around; /* Distribute space evenly around items */
             display: flex;
             gap: var(--size-7);
             margin-block: 0;
