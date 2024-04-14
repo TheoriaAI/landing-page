@@ -96,7 +96,7 @@
 		rate="0.1"
 		style="display: flex; align-items: center; justify-content: center;"
 	>
-		<iframe
+		<!-- <iframe
 			src="https://calendly.com/rufimelo99/30min"
 			title="Calendly"
 			class="bash"
@@ -106,8 +106,8 @@
 			tabindex="0"
 		>
 		</iframe>
-
-		<!-- <img
+ 		-->
+		<img
 			src={url('bash')}
 			alt=""
 			class="bash"
@@ -115,7 +115,7 @@
 			on:click={() => parallax.scrollTo(3, { selector: '.clients-main' })}
 			on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(3, { selector: '.clients-main' })}
 			tabindex="0"
-		/> -->
+		/>
 	</ParallaxLayer>
 
 	<ParallaxLayer

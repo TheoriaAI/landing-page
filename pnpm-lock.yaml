@@ -35,9 +35,15 @@ dependencies:
   svelte-carousel:
     specifier: ^1.0.25
     version: 1.0.25
+  svelte-modals:
+    specifier: ^1.3.0
+    version: 1.3.0(svelte@4.2.12)
   svelte-parallax:
     specifier: ^0.3.1
     version: 0.3.1
+  svelte-simple-modal:
+    specifier: ^1.6.2
+    version: 1.6.2(svelte@4.2.12)
 
 devDependencies:
   '@sveltejs/adapter-netlify':
@@ -3039,6 +3045,14 @@ packages:
       svelte: 4.2.12
     dev: true
 
+  /svelte-modals@1.3.0(svelte@4.2.12):
+    resolution: {integrity: sha512-b1Ylnyv9O6b7VYeWGJVToaVU2lw7GtErVwiEdojyfnOuZcrhNlQ5eDqbTrL3xyKz8j2VTy/QiGUl1lm/6SnQ2A==}
+    peerDependencies:
+      svelte: ^3.0.0 || ^4.0.0
+    dependencies:
+      svelte: 4.2.12
+    dev: false
+
   /svelte-parallax@0.3.1:
     resolution: {integrity: sha512-Ec41z29CCXeOiSbBIFZYsy/A/o0xrxKCmVbTnbzCi4gOGukG1OHMzoUqIkvVCLxX6eJDh1Etg0qZZk6Z9W6SHA==}
     dependencies:
@@ -3093,6 +3107,14 @@ packages:
       svelte: 4.2.12
       typescript: 5.4.3
     dev: true
+
+  /svelte-simple-modal@1.6.2(svelte@4.2.12):
+    resolution: {integrity: sha512-cRjpqjZTH0rU5G+SRhUDHOV6TISQs6AnEW/Z7D5uXiz5V/3axrBYcBCPnKMI2Z0EyXmpwPXK4q9grroQTL6rhQ==}
+    peerDependencies:
+      svelte: ^3.30.0 || ^4.0.0
+    dependencies:
+      svelte: 4.2.12
+    dev: false
 
   /svelte@4.2.12:
     resolution: {integrity: sha512-d8+wsh5TfPwqVzbm4/HCXC783/KPHV60NvwitJnyTA5lWn1elhXMNWhXGCJ7PwPa8qFUnyJNIyuIRt2mT0WMug==}
