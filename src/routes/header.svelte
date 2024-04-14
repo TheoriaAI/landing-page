@@ -1,8 +1,7 @@
-<script lang="ts">
-    import { slide } from 'svelte/transition';
+<script>
     import { onMount } from 'svelte';
     import Toggle from './toggle.svelte'
-    import * as config from '$lib/config'
+    
     let isOpen = false;
     let isLargeScreen = false;
 
@@ -14,49 +13,46 @@
     });
 </script>
 
-<nav class="navbar">
-    <a href="/" class="text-lg font-semibold">{config.title} </a>
-    {#if !isOpen && !isLargeScreen}
-        <button on:click={() => isOpen = !isOpen} class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
-    {/if}
-    {#if isOpen || isLargeScreen}
-        <div class="nav-links" transition:slide={{duration: 300}}>
-            <ul class="text-m flex flex-col gap-[40px] sm:flex-row">
-                {#if isOpen && !isLargeScreen}
-                    <li>
-                        <button on:click={() => isOpen = !isOpen} class="close-button">X</button>
-                    </li>
-                {/if}
-                <li>
-                    <a href="/blog">Blog</a>
-                </li>
-                <li>
-                    <a href="/case_studies">Case Studies</a>
-                </li>
-                <li>
-                    <Toggle />
-                </li>
-            </ul>
+<header>
+    <nav class="container mx-auto px-6 py-3 navbar" >
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="/">Theoria AI</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden">
+                    <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu" on:click={() => isOpen = !isOpen}>
+                        <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                            <path fill-rule="evenodd" d="M4 5a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1zm1 6a1 1 0 100 2h14a1 1 0 100-2H5zm1 6a1 1 0 011-1h14a1 1 0 110 2H6a1 1 0 01-1-1z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div class={`${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-1 text-sm text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="/blog">Blog</a>
+                    <a class="my-1 text-sm text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="/case_studies">Case Studies</a>
+                    <a class="my-1 text-sm text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"> <Toggle/> </a>
+                </div>
+            </div>
         </div>
-    {/if}
-</nav>
+    </nav>
+</header>
 
 <style>
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: var(--surface-2);
-        padding: var(--size-3);
         width: 95%;
-        margin-inline: auto;
-        transition: background-color 0.3s ease;
     }
 
+    .navbar:hover {
+        background-color: var(--surface-1); /* Change color on hover */
+    }
+    
     a {
         color: inherit;
         text-decoration: none;
@@ -64,76 +60,5 @@
         transition: color 0.3s ease;
     }
 
-    .hamburger, .close-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2rem;
-        height: 2rem;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        box-sizing: border-box;
-        margin-left: auto;
-        transition: transform 0.3s ease;
-    }
 
-    .hamburger div {
-        width: 2rem;
-        height: 0.25rem;
-        background: var(--text-2);
-        border-radius: 10px;
-        transition: all 0.3s linear;
-        position: relative;
-        transform-origin: 1px;
-    }
-
-    .close-button {
-        color: var(--text-2);
-        font-size: 1.5rem;
-        transition: color 0.3s ease;
-        border: 1px solid var(--text-2); /* Add a border */
-        border-radius: 50%; /* Make it circular */
-        margin-right: 1rem; /* Add some margin */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--surface-2);
-        padding: var(--size-3);
-        width: 95%;
-        margin-inline: auto;
-        transition: background-color 0.3s ease;
-    }
-
-    .navbar:hover {
-        background-color: var(--surface-1); /* Change color on hover */
-    }
-
-    .nav-links {
-        display: flex;
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-    }
-
-    @media (min-width: 768px) {
-        .hamburger {
-            display: none;
-        }
-        
-        .navbar {
-            justify-content: space-between; /* Distribute space evenly between items */
-        }
-
-        .nav-links {
-            flex-grow: 1; /* Allow nav-links to take up remaining space */
-            justify-content: space-around; /* Distribute space evenly around items */
-            display: flex;
-            gap: var(--size-7);
-            margin-block: 0;
-        }
-    }
 </style>
