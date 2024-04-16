@@ -1,5 +1,4 @@
 <script>
-	import * as config from '$lib/config'
 	let elemCarousel: HTMLDivElement
 	const unsplashIds = [
 		'vjUokUWbFOs',
