@@ -41,27 +41,14 @@
 		<img src="/parallax/boxes.svg" alt="" style="display: block; width: 10%; margin-left: 40%;" />
 	</ParallaxLayer>
 
-	<ParallaxLayer offset="0" rate="0.2" style="opacity: 0.2;">
+	<ParallaxLayer offset="0" rate="0.2" style="opacity: 0.1;">
 		<img src="/parallax/bot.svg" alt="" style="display: block; width: 10%; margin-left: 10%;" />
 		<img src="/parallax/sigma.svg" alt="" style="display: block; width: 10%; margin-left: 75%;" />
 	</ParallaxLayer>
 
-	<ParallaxLayer offset="0.6" rate="-0.1" style="opacity: 0.4;">
+	<ParallaxLayer offset="0.6" rate="-0.1" style="opacity: 0.1;">
 		<img src="/parallax/braces.svg" alt="" style="display: block; width: 10%; margin-left: 60%;" />
-		<img src="/parallax/truck.svg" alt="" style="display: block; width: 10%; margin-left: 30%;" />
-		<img
-			src="/parallax/ship-wheel.svg"
-			alt=""
-			style="display: block; width: 10%; margin-left: 80%;"
-		/>
-	</ParallaxLayer>
-
-	<ParallaxLayer offset="1.4" rate="0.4" style="opacity: 0.6;">
-		<img src="/parallax/anchor.svg" alt="" style="display: block; width: 10%; margin-left: 75%;" />
-	</ParallaxLayer>
-
-	<ParallaxLayer offset="1.6" rate="0.4" style="opacity: 0.6;">
-		<img src="/parallax/bitcoin.svg" alt="" style="display: block; width: 10%; margin-left: 5%;" />
+		<img src="/parallax/pi.svg" alt="" style="display: block; width: 10%; margin-left: 30%;" />
 	</ParallaxLayer>
 
 	<ParallaxLayer
