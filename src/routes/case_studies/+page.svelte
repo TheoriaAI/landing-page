@@ -25,9 +25,9 @@
 			</div>
 			<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 				{#each data.case_studies as case_study}
-					<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+					<div class="flex flex-col rounded-lg shadow-lg zoom">
 						<div class="flex-shrink-0">
-							<img class="h-48 w-full object-cover" src={case_study.image} alt="" />
+							<img class="h-48 w-full object-cover" src={case_study.image} alt=""/>
 						</div>
 						<div class="card flex flex-1 flex-col justify-between p-6">
 							<div class="flex-1">
@@ -68,10 +68,19 @@
 </section>
 
 <style lang="postcss">
+	.zoom {
+    transition: transform 0.3s ease;
+	}
+
+	.zoom:hover {
+		transform: scale(1.05); 
+	}
+
 	.card {
 		background-color: var(--surface-1);
 		border: 2px solid var(--border);
 	}
+
 	.card:hover {
 		background-color: var(--surface-3);
 	}
