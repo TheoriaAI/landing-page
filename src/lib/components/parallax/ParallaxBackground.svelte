@@ -17,7 +17,7 @@
 		style="background-image: {url('stars', true)}; background-size: cover;"
 	/>
 
-	<ParallaxLayer offset="0.8" rate="-0.3">
+	<ParallaxLayer offset="0.8" rate="-0.3" style="opacity: 0.3;">
 		<img src={url('satellite3')} alt="" style="width: 15%; margin-left: 70%;" />
 	</ParallaxLayer>
 
