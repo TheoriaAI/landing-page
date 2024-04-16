@@ -114,10 +114,6 @@
 </div>
 
 <style>
-	/* .isolate {
-      background-color: var(--surface-4);
-    } */
-
 	h2,
 	h1 {
 		color: var(--text-4);
@@ -125,9 +121,5 @@
 	p,
 	strong {
 		color: var(--text-2);
-	}
-	dt,
-	dd {
-		color: var(--text-4);
 	}
 </style>

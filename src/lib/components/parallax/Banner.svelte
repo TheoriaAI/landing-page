@@ -2,18 +2,10 @@
 	let banner
 </script>
 
-<!-- <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 server"
-    style="width: 90%;"
-    on:click={() => parallax.scrollTo(2, { selector: '.bash' })}
-    on:keyup={(e) => e.key === 'Enter' && parallax.scrollTo(2, { selector: '.bash' })}
-    tabindex="0"> -->
-<!-- extra large shadow -->
 <div
 	class="relative isolate overflow-hidden rounded-2xl bg-gray-900 py-24 shadow-2xl sm:py-32"
 	bind:this={banner}
 >
-	<!-- <img src="/background-images/office-light.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" /> -->
-
 	<div
 		class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
 		aria-hidden="true"
@@ -52,12 +44,6 @@
 				<a href="#">Contacts <span aria-hidden="true">&rarr;</span></a>
 				<a href="#">Team <span aria-hidden="true">&rarr;</span></a>
 			</div>
-			<!-- <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="flex flex-col-reverse">
-                <dt class="text-base leading-7 text-gray-300">Something cool</dt>
-                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
-            </div>
-        </dl> -->
 		</div>
 	</div>
 </div>
@@ -74,9 +60,5 @@
 	p,
 	a {
 		color: var(--text-2);
-	}
-	dt,
-	dd {
-		color: var(--text-4);
 	}
 </style>
