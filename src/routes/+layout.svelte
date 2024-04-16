@@ -40,5 +40,4 @@
 		width: 100%;
 		background-color: var(--surface-3);
 	}
-	
 </style>
