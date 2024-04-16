@@ -38,12 +38,7 @@
 						aria-label="toggle menu"
 						on:click={() => (isOpen = !isOpen)}
 					>
-						<svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-							<path
-								fill-rule="evenodd"
-								d="M4 5a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1zm1 6a1 1 0 100 2h14a1 1 0 100-2H5zm1 6a1 1 0 011-1h14a1 1 0 110 2H6a1 1 0 01-1-1z"
-							></path>
-						</svg>
+						<img src="/menu.svg" alt="" />
 					</button>
 				</div>
 			</div>

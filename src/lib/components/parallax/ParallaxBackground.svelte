@@ -23,7 +23,6 @@
 
 	<ParallaxLayer offset="0.0" rate="0.2" style="opacity: 0.1;">
 		<img src="/parallax/atom.svg" alt="" style="display: block; width: 10%; margin-left: 55%;" />
-		
 	</ParallaxLayer>
 	<ParallaxLayer offset="0.2" rate="0.8" style="opacity: 0.1;">
 		<img
