@@ -11,6 +11,12 @@
 			isLargeScreen = window.innerWidth >= 768
 		})
 	})
+
+	import { writable } from 'svelte/store'
+	import Modal from 'svelte-simple-modal'
+	import Popup from '$lib/components/custom/Popup.svelte'
+	const modal = writable(null)
+	const showModal = () => modal.set(Popup)
 </script>
 
 <header>
@@ -53,6 +59,13 @@
 						class="my-1 text-sm text-gray-700 hover:text-blue-500 md:mx-4 md:my-0 dark:text-gray-200 dark:hover:text-blue-400"
 						href="/case_studies">Case Studies</a
 					>
+					<Modal show={$modal}>
+						<a
+							class="my-1 text-sm text-gray-700 hover:text-blue-500 md:mx-4 md:my-0 dark:text-gray-200 dark:hover:text-blue-400"
+							on:click={showModal}
+							>Schedule a Call
+						</a>
+					</Modal>
 					<a
 						class="my-1 text-sm text-gray-700 hover:text-blue-500 md:mx-4 md:my-0 dark:text-gray-200 dark:hover:text-blue-400"
 					>
