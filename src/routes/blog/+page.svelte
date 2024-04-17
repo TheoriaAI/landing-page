@@ -25,42 +25,44 @@
 			</div>
 			<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 				{#each data.posts as post}
-				<div class="flex flex-col rounded-lg shadow-lg zoom">
-					<div class="flex-shrink-0">
-						<img class="h-48 w-full object-cover" src={post.image} alt=""/>
-					</div>
-						<div class="card flex flex-1 flex-col justify-between p-6">
-							<div class="flex-1">
-								<p class="text-sm font-medium text-indigo-600">
-									<a href={post.slug} class="hover:underline">Blog</a>
-								</p>
-								<a href={post.slug} class="mt-2 block">
-									<p class="text-xl font-semibold text-gray-900">{post.title}</p>
-									<p class="mt-3 text-base text-gray-500">{post.description}</p>
-								</a>
+					<a href={post.slug}>
+						<div class="zoom flex flex-col rounded-lg shadow-lg">
+							<div class="flex-shrink-0">
+								<img class="h-48 w-full object-cover" src={post.image} alt="" />
 							</div>
-							<div class="mt-6 flex items-center">
-								<!-- Author Photo-->
-								<div class="flex-shrink-0">
-									<a href="#">
-										<span class="sr-only">Roel Aufderehar</span>
-										<img class="h-10 w-10 rounded-full" src={post.author_image} alt="" />
+							<div class="card flex flex-1 flex-col justify-between p-6">
+								<div class="flex-1">
+									<p class="text-sm font-medium text-indigo-600">
+										<a href={post.slug} class="hover:underline">Blog</a>
+									</p>
+									<a href={post.slug} class="mt-2 block">
+										<p class="text-xl font-semibold text-gray-900">{post.title}</p>
+										<p class="mt-3 text-base text-gray-500">{post.description}</p>
 									</a>
 								</div>
-								<div class="ml-3">
-									<!-- Author Name -->
-									<p class="text-sm font-medium text-gray-900">
-										<a href="#" class="hover:underline">{post.author}</a>
-									</p>
-									<div class="flex space-x-1 text-sm text-gray-500">
-										<time>{formatDate(post.date)}</time>
-										<!-- <span aria-hidden="true">·</span> -->
-										<!-- <span>6 min read</span> -->
+								<div class="mt-6 flex items-center">
+									<!-- Author Photo-->
+									<div class="flex-shrink-0">
+										<a href="#">
+											<span class="sr-only">Roel Aufderehar</span>
+											<img class="h-10 w-10 rounded-full" src={post.author_image} alt="" />
+										</a>
+									</div>
+									<div class="ml-3">
+										<!-- Author Name -->
+										<p class="text-sm font-medium text-gray-900">
+											<a href="#" class="hover:underline">{post.author}</a>
+										</p>
+										<div class="flex space-x-1 text-sm text-gray-500">
+											<time>{formatDate(post.date)}</time>
+											<!-- <span aria-hidden="true">·</span> -->
+											<!-- <span>6 min read</span> -->
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 		</div>
@@ -68,20 +70,21 @@
 </section>
 
 <style lang="postcss">
-	.card, .card .flex-shrink-0 img {
-    transition: transform 0.3s ease;
-	}
-
-	.card:hover, .card:hover .flex-shrink-0 img {
-		transform: scale(1.05); 
-	}
-
 	.zoom {
-    transition: transform 0.3s ease;
+		transition: transform 0.3s ease;
 	}
 
 	.zoom:hover {
 		transform: scale(1.05);
+	}
+
+	.card {
+		background-color: var(--surface-1);
+		border: 2px solid var(--border);
+	}
+
+	.card:hover {
+		background-color: var(--surface-3);
 	}
 	p,
 	h5,

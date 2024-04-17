@@ -20,9 +20,9 @@
 </script>
 
 <header>
-	<nav class="navbar container mx-auto rounded-b-3xl px-6 py-3">
+	<nav class="navbar mx-auto py-3">
 		<div class="flex flex-col md:flex-row md:items-center md:justify-between">
-			<div class="flex items-center justify-between">
+			<div class="flex items-center justify-between px-4">
 				<div>
 					<a
 						class="text-2xl font-bold text-gray-800 hover:text-gray-700 lg:text-3xl dark:text-white dark:hover:text-gray-300"
@@ -75,11 +75,11 @@
 <style>
 	.navbar {
 		background-color: var(--surface-2);
-		width: 95%;
+		padding: var(--size-3);
 	}
 
 	.navbar:hover {
-		background-color: var(--surface-1); /* Change color on hover */
+		background-color: var(--surface-1);
 	}
 
 	a {

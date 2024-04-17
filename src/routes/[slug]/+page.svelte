@@ -10,6 +10,14 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
+<div class="-py-10 absolute h-48 w-full">
+	<img
+		class="h-full w-full rounded-none rounded-b-xl object-cover"
+		src={data.meta.image}
+		alt={data.meta.title}
+	/>
+</div>
+
 <article>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
@@ -31,6 +39,7 @@
 	article {
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
+		padding-block: var(--size-9);
 	}
 
 	h1 {
