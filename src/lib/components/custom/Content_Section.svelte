@@ -7,13 +7,13 @@
 		>
 			<div class="lg:pr-4">
 				<div class="lg:max-w-lg">
-					<p class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
 					<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-						A better workflow
+						Empowering Global Markets through Data Intelligence
 					</h1>
 					<p class="mt-6 text-xl leading-8 text-gray-700">
-						Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi,
-						nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.
+						Theoria AI specializes in AI-driven research and analysis for global commodity markets. Leveraging cutting-edge artificial intelligence and machine learning technologies,
+						we provide actionable insights and predictive analytics to empower businesses, investors, and policymakers in navigating the complexities of commodity trading and investment. From tracking import-export trade flows to forecasting market trends and risk factors,
+						we equip clients with the knowledge and intelligence needed to make informed decisions and seize opportunities in the dynamic world of commodities.
 					</p>
 				</div>
 			</div>
@@ -32,80 +32,45 @@
 		>
 			<div class="lg:pr-4">
 				<div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-					<p>
-						Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-						semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus
-						viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-						Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-					</p>
 					<ul role="list" class="mt-8 space-y-8 text-gray-600">
 						<li class="flex gap-x-3">
-							<svg
+							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-								aria-hidden="true"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
-									clip-rule="evenodd"
-								/>
-							</svg>
+								src="/main_page/candlestick-chart.svg"
+								alt="" />
 							<span
-								><strong class="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor
-								sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-								dolor cupiditate blanditiis ratione.</span
+								><strong class="font-semibold text-gray-900">Anticipate Market Trends.</strong> Leverage our predictive analytics to forecast commodity price movements, identify emerging market trends,
+								and capitalize on opportunities ahead of the competition.</span
 							>
 						</li>
 						<li class="flex gap-x-3">
-							<svg
+							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-								aria-hidden="true"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-									clip-rule="evenodd"
-								/>
-							</svg>
+								src="/main_page/gauge.svg"
+								alt="" />
 							<span
-								><strong class="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id
-								magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span
+								><strong class="font-semibold text-gray-900">Optimize Hedging Strategies</strong> Utilize our advanced algorithms to optimize hedging strategies, mitigate price volatility,
+								and protect against adverse market conditions, ensuring effective risk management for your commodity portfolio.</span
 							>
 						</li>
 						<li class="flex gap-x-3">
-							<svg
+							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-								aria-hidden="true"
-							>
-								<path
-									d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"
-								/>
-								<path
-									fill-rule="evenodd"
-									d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-									clip-rule="evenodd"
-								/>
-							</svg>
+								src="/main_page/scan-search.svg"
+								alt="" />
 							<span
-								><strong class="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt
-								sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span
+								><strong class="font-semibold text-gray-900">Enhance Decision-Making</strong> 
+								Access real-time insights and data-driven recommendations to make informed decisions on commodity trading, investment allocations, and hedging strategies, enhancing overall portfolio performance and profitability.</span
 							>
 						</li>
 					</ul>
 					<h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-						No server? No problem.
+						Hedging Strategies with Theoria AI
 					</h2>
 					<p class="mt-6">
-						Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu
-						ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh.
-						Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus
-						ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.
+						Our advanced analytics capabilities enable us to provide valuable information for performing hedging strategies, allowing clients to manage and mitigate risks associated with commodity price fluctuations.
+						Whether hedging against currency volatility, commodity price changes, or geopolitical uncertainties, we deliver timely and accurate insights to support effective risk management strategies and optimize portfolio performance. With Theoria AI,
+						clients can stay ahead of market trends, minimize exposure to adverse events, and maximize their competitive advantage in commodity markets.
 					</p>
 				</div>
 			</div>
