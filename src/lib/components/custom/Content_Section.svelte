@@ -11,9 +11,13 @@
 						Empowering Global Markets through Data Intelligence
 					</h1>
 					<p class="mt-6 text-xl leading-8 text-gray-700">
-						Theoria AI specializes in AI-driven research and analysis for global commodity markets. Leveraging cutting-edge artificial intelligence and machine learning technologies,
-						we provide actionable insights and predictive analytics to empower businesses, investors, and policymakers in navigating the complexities of commodity trading and investment. From tracking import-export trade flows to forecasting market trends and risk factors,
-						we equip clients with the knowledge and intelligence needed to make informed decisions and seize opportunities in the dynamic world of commodities.
+						Theoria AI specializes in AI-driven research and analysis for global commodity markets.
+						Leveraging cutting-edge artificial intelligence and machine learning technologies, we
+						provide actionable insights and predictive analytics to empower businesses, investors,
+						and policymakers in navigating the complexities of commodity trading and investment.
+						From tracking import-export trade flows to forecasting market trends and risk factors,
+						we equip clients with the knowledge and intelligence needed to make informed decisions
+						and seize opportunities in the dynamic world of commodities.
 					</p>
 				</div>
 			</div>
@@ -37,30 +41,38 @@
 							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
 								src="/main_page/candlestick-chart.svg"
-								alt="" />
+								alt=""
+							/>
 							<span
-								><strong class="font-semibold text-gray-900">Anticipate Market Trends.</strong> Leverage our predictive analytics to forecast commodity price movements, identify emerging market trends,
-								and capitalize on opportunities ahead of the competition.</span
+								><strong class="font-semibold text-gray-900">Anticipate Market Trends.</strong> Leverage
+								our predictive analytics to forecast commodity price movements, identify emerging market
+								trends, and capitalize on opportunities ahead of the competition.</span
 							>
 						</li>
 						<li class="flex gap-x-3">
 							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
 								src="/main_page/gauge.svg"
-								alt="" />
+								alt=""
+							/>
 							<span
-								><strong class="font-semibold text-gray-900">Optimize Hedging Strategies</strong> Utilize our advanced algorithms to optimize hedging strategies, mitigate price volatility,
-								and protect against adverse market conditions, ensuring effective risk management for your commodity portfolio.</span
+								><strong class="font-semibold text-gray-900">Optimize Hedging Strategies</strong> Utilize
+								our advanced algorithms to optimize hedging strategies, mitigate price volatility, and
+								protect against adverse market conditions, ensuring effective risk management for your
+								commodity portfolio.</span
 							>
 						</li>
 						<li class="flex gap-x-3">
 							<img
 								class="mt-1 h-5 w-5 flex-none text-indigo-600"
 								src="/main_page/scan-search.svg"
-								alt="" />
+								alt=""
+							/>
 							<span
-								><strong class="font-semibold text-gray-900">Enhance Decision-Making</strong> 
-								Access real-time insights and data-driven recommendations to make informed decisions on commodity trading, investment allocations, and hedging strategies, enhancing overall portfolio performance and profitability.</span
+								><strong class="font-semibold text-gray-900">Enhance Decision-Making</strong>
+								Access real-time insights and data-driven recommendations to make informed decisions
+								on commodity trading, investment allocations, and hedging strategies, enhancing overall
+								portfolio performance and profitability.</span
 							>
 						</li>
 					</ul>
@@ -68,9 +80,13 @@
 						Hedging Strategies with Theoria AI
 					</h2>
 					<p class="mt-6">
-						Our advanced analytics capabilities enable us to provide valuable information for performing hedging strategies, allowing clients to manage and mitigate risks associated with commodity price fluctuations.
-						Whether hedging against currency volatility, commodity price changes, or geopolitical uncertainties, we deliver timely and accurate insights to support effective risk management strategies and optimize portfolio performance. With Theoria AI,
-						clients can stay ahead of market trends, minimize exposure to adverse events, and maximize their competitive advantage in commodity markets.
+						Our advanced analytics capabilities enable us to provide valuable information for
+						performing hedging strategies, allowing clients to manage and mitigate risks associated
+						with commodity price fluctuations. Whether hedging against currency volatility,
+						commodity price changes, or geopolitical uncertainties, we deliver timely and accurate
+						insights to support effective risk management strategies and optimize portfolio
+						performance. With Theoria AI, clients can stay ahead of market trends, minimize exposure
+						to adverse events, and maximize their competitive advantage in commodity markets.
 					</p>
 				</div>
 			</div>
