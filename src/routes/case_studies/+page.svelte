@@ -25,42 +25,44 @@
 			</div>
 			<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 				{#each data.case_studies as case_study}
-					<div class="flex flex-col rounded-lg shadow-lg zoom">
-						<div class="flex-shrink-0">
-							<img class="h-48 w-full object-cover" src={case_study.image} alt=""/>
-						</div>
-						<div class="card flex flex-1 flex-col justify-between p-6">
-							<div class="flex-1">
-								<p class="text-sm font-medium text-indigo-600">
-									<a href={case_study.slug} class="hover:underline">Blog</a>
-								</p>
-								<a href={case_study.slug} class="mt-2 block">
-									<p class="text-xl font-semibold text-gray-900">{case_study.title}</p>
-									<p class="mt-3 text-base text-gray-500">{case_study.description}</p>
-								</a>
+					<a href={case_study.slug}>
+						<div class="zoom flex flex-col rounded-lg shadow-lg">
+							<div class="flex-shrink-0">
+								<img class="h-48 w-full object-cover" src={case_study.image} alt="" />
 							</div>
-							<div class="mt-6 flex items-center">
-								<!-- Author Photo-->
-								<div class="flex-shrink-0">
-									<a href="#">
-										<span class="sr-only">Roel Aufderehar</span>
-										<img class="h-10 w-10 rounded-full" src={case_study.author_image} alt="" />
+							<div class="card flex flex-1 flex-col justify-between p-6">
+								<div class="flex-1">
+									<p class="text-sm font-medium text-indigo-600">
+										<a href={case_study.slug} class="hover:underline">Blog</a>
+									</p>
+									<a href={case_study.slug} class="mt-2 block">
+										<p class="text-xl font-semibold text-gray-900">{case_study.title}</p>
+										<p class="mt-3 text-base text-gray-500">{case_study.description}</p>
 									</a>
 								</div>
-								<div class="ml-3">
-									<!-- Author Name -->
-									<p class="text-sm font-medium text-gray-900">
-										<a href="#" class="hover:underline">{case_study.author}</a>
-									</p>
-									<div class="flex space-x-1 text-sm text-gray-500">
-										<time>{formatDate(case_study.date)}</time>
-										<!-- <span aria-hidden="true">·</span> -->
-										<!-- <span>6 min read</span> -->
+								<div class="mt-6 flex items-center">
+									<!-- Author Photo-->
+									<div class="flex-shrink-0">
+										<a href="#">
+											<span class="sr-only">Roel Aufderehar</span>
+											<img class="h-10 w-10 rounded-full" src={case_study.author_image} alt="" />
+										</a>
+									</div>
+									<div class="ml-3">
+										<!-- Author Name -->
+										<p class="text-sm font-medium text-gray-900">
+											<a href="#" class="hover:underline">{case_study.author}</a>
+										</p>
+										<div class="flex space-x-1 text-sm text-gray-500">
+											<time>{formatDate(case_study.date)}</time>
+											<!-- <span aria-hidden="true">·</span> -->
+											<!-- <span>6 min read</span> -->
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 		</div>
@@ -69,11 +71,11 @@
 
 <style lang="postcss">
 	.zoom {
-    transition: transform 0.3s ease;
+		transition: transform 0.3s ease;
 	}
 
 	.zoom:hover {
-		transform: scale(1.05); 
+		transform: scale(1.05);
 	}
 
 	.card {

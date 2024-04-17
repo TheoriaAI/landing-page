@@ -36,7 +36,6 @@
 
 	main {
 		margin-inline: auto;
-		padding-block: var(--size-9);
 		width: 100%;
 		background-color: var(--surface-3);
 	}
